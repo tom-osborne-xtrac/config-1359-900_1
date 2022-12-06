@@ -10,6 +10,7 @@
 //     Inputs.FIFTH_RATIO.Value = "19:23";
 //     Inputs.SIXTH_RATIO.Value = "19:20";
 //     Inputs.SEVENTH_RATIO.Value = "27:25";
+//     Inputs.SEVENTH_TYPE.Value = "Five-dog";
 //     Inputs.BEVEL_RATIO.Value = "21:22";
 //     Inputs.FINAL_RATIO.Value = "15:47";
 //     Inputs.DRIVE.Value = "45";
@@ -33,6 +34,7 @@ if (Inputs.INSTALLATION.Value == "BMW") {
     Inputs.FIFTH_RATIO.Value = "19:23";
     Inputs.SIXTH_RATIO.Value = "19:20";
     Inputs.SEVENTH_RATIO.Value = "27:25";
+    Inputs.SEVENTH_TYPE.Value = "Five-dog";
     Inputs.BEVEL_RATIO.Value = "22:21";
     Inputs.FINAL_RATIO.Value = "13:49";
     Inputs.DRIVE.Value = "30";
@@ -55,6 +57,7 @@ if (Inputs.INSTALLATION.Value == "BMW - Test") {
     Inputs.FIFTH_RATIO.Value = "19:25";
     Inputs.SIXTH_RATIO.Value = "23:27";
     Inputs.SEVENTH_RATIO.Value = "19:20";
+    Inputs.SEVENTH_TYPE.Value = "Five-dog";
     Inputs.BEVEL_RATIO.Value = "22:21";
     Inputs.FINAL_RATIO.Value = "15:46";
     Inputs.DRIVE.Value = "30";
@@ -77,6 +80,7 @@ if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM")
     Inputs.FIFTH_RATIO.Value = "21:26";
     Inputs.SIXTH_RATIO.Value = "23:25";
     Inputs.SEVENTH_RATIO.Value = "24:23";
+    Inputs.SEVENTH_TYPE.Value = "Five-dog";
     Inputs.BEVEL_RATIO.Value = "23:21";
     Inputs.FINAL_RATIO.Value = "13:49";
     Inputs.DRIVE.Value = "30";
@@ -100,6 +104,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Short") {
     Inputs.FIFTH_RATIO.Value = "20:27";
     Inputs.SIXTH_RATIO.Value = "21:25";
     Inputs.SEVENTH_RATIO.Value = "19:20";
+    Inputs.SEVENTH_TYPE.Value = "Five-dog";
     Inputs.BEVEL_RATIO.Value = "21:23";
     Inputs.FINAL_RATIO.Value = "13:46";
     Inputs.DRIVE.Value = "30";
@@ -122,6 +127,7 @@ if (Inputs.INSTALLATION.Value == "Porsche") {
     Inputs.FIFTH_RATIO.Value = "19:23";
     Inputs.SIXTH_RATIO.Value = "19:20";
     Inputs.SEVENTH_RATIO.Value = "27:25";
+    Inputs.SEVENTH_TYPE.Value = "Three-dog";
     Inputs.BEVEL_RATIO.Value = "21:22";
     Inputs.FINAL_RATIO.Value = "14:48";
     Inputs.DRIVE.Value = "45";
@@ -146,6 +152,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.FIFTH_RATIO.Value = "21:26";
     Inputs.SIXTH_RATIO.Value = "19:21";
     Inputs.SEVENTH_RATIO.Value = "24:24";
+    Inputs.SEVENTH_TYPE.Value = "Five-dog";
     Inputs.BEVEL_RATIO.Value = "21:23";
     Inputs.FINAL_RATIO.Value = "14:48";
     Inputs.DRIVE.Value = "30";

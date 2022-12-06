@@ -1,28 +1,28 @@
 /* ****** 1159 - On-leave Inputs.INSTALLATION.Value ****** */
 
-// if (Inputs.INSTALLATION.Value == "Audi") {
-//     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-//     Inputs.FIRST_SECOND_RATIO.Value = "E 13:37 / 15:33";
-//     Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
-//     Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
-//     Inputs.THIRD_RATIO.Value = "16:27";
-//     Inputs.FOURTH_RATIO.Value = "19:27";
-//     Inputs.FIFTH_RATIO.Value = "19:23";
-//     Inputs.SIXTH_RATIO.Value = "19:20";
-//     Inputs.SEVENTH_RATIO.Value = "27:25";
-//     Inputs.SEVENTH_TYPE.Value = "Five-dog";
-//     Inputs.BEVEL_RATIO.Value = "21:22";
-//     Inputs.FINAL_RATIO.Value = "15:47";
-//     Inputs.DRIVE.Value = "45";
-//     Inputs.COAST.Value = "60";
-//     Inputs.OUTFLANGE_REQD.Value = "plug kit";
-//     Inputs.HYBRID.Value = "19/30/44";
-//     Inputs.AC_PULLEY.Value = "Yes";
-//     Inputs.PACKING_CRATE.Value = "Yes";
-//     Inputs.MANIFOLD.Value = "standard";
-//     Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
-//     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
-// }
+if (Inputs.INSTALLATION.Value == "Audi") {
+    Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
+    Inputs.FIRST_SECOND_RATIO.Value = "E 13:37 / 15:33";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
+    Inputs.THIRD_RATIO.Value = "16:27";
+    Inputs.FOURTH_RATIO.Value = "19:27";
+    Inputs.FIFTH_RATIO.Value = "19:23";
+    Inputs.SIXTH_RATIO.Value = "19:20";
+    Inputs.SEVENTH_RATIO.Value = "27:25";
+    Inputs.SEVENTH_TYPE.Value = "Five-dog";
+    Inputs.BEVEL_RATIO.Value = "21:22";
+    Inputs.FINAL_RATIO.Value = "15:47";
+    Inputs.DRIVE.Value = "45";
+    Inputs.COAST.Value = "60";
+    Inputs.OUTFLANGE_REQD.Value = "plug kit";
+    Inputs.HYBRID.Value = "19/30/44";
+    Inputs.AC_PULLEY.Value = "Yes";
+    Inputs.PACKING_CRATE.Value = "Yes";
+    Inputs.MANIFOLD.Value = "standard";
+    Inputs.GEARCHANGE_UNIT.Value = "None";
+    Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
+}
 
 if (Inputs.INSTALLATION.Value == "BMW") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
@@ -43,7 +43,7 @@ if (Inputs.INSTALLATION.Value == "BMW") {
     Inputs.HYBRID.Value = "19/30/44";
     Inputs.AC_PULLEY.Value = "No";
     Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
+    Inputs.GEARCHANGE_UNIT.Value = "A/V ring only";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
 }
 
@@ -66,7 +66,7 @@ if (Inputs.INSTALLATION.Value == "BMW - Test") {
     Inputs.HYBRID.Value = "14/24/33";
     Inputs.AC_PULLEY.Value = "Yes";
     Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
+    Inputs.GEARCHANGE_UNIT.Value = "A/V ring only";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
 }
 
@@ -90,7 +90,7 @@ if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM")
     Inputs.HYBRID.Value = "16/23/35";
     Inputs.AC_PULLEY.Value = "Yes";
     Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
+    Inputs.GEARCHANGE_UNIT.Value = "None";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
 }
 
@@ -113,7 +113,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Short") {
     Inputs.HYBRID.Value = "20/20/40";
     Inputs.AC_PULLEY.Value = "No";
     Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
+    Inputs.GEARCHANGE_UNIT.Value = "None";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "No";
 }
 
@@ -137,7 +137,7 @@ if (Inputs.INSTALLATION.Value == "Porsche") {
     Inputs.HYBRID.Value = "19/30/44";
     Inputs.AC_PULLEY.Value = "Yes";
     Inputs.PACKING_CRATE.Value = "Yes";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "Yes";
+    Inputs.GEARCHANGE_UNIT.Value = "1254 IVA + A/V ring";
     Inputs.MANIFOLD.Value = "customer specific";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "No";
 }
@@ -161,6 +161,6 @@ if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.HYBRID.Value = "20/20/40";
     Inputs.AC_PULLEY.Value = "No";
     Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
+    Inputs.GEARCHANGE_UNIT.Value = "None";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "No";
 }

@@ -81,8 +81,8 @@ if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM")
     Inputs.SIXTH_RATIO.Value = "23:25";
     Inputs.SEVENTH_RATIO.Value = "24:23";
     Inputs.SEVENTH_TYPE.Value = "Five-dog";
-    Inputs.BEVEL_RATIO.Value = "23:21";
-    Inputs.FINAL_RATIO.Value = "13:49";
+    Inputs.BEVEL_RATIO.Value = "21:22";
+    Inputs.FINAL_RATIO.Value = "15:46";
     Inputs.DRIVE.Value = "30";
     Inputs.COAST.Value = "60";
     Inputs.OUTFLANGE_REQD.Value = "plug kit";
@@ -154,7 +154,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.SEVENTH_RATIO.Value = "24:24";
     Inputs.SEVENTH_TYPE.Value = "Five-dog";
     Inputs.BEVEL_RATIO.Value = "21:23";
-    Inputs.FINAL_RATIO.Value = "14:48";
+    Inputs.FINAL_RATIO.Value = "14:47";
     Inputs.DRIVE.Value = "30";
     Inputs.COAST.Value = "60";
     Inputs.OUTFLANGE_REQD.Value = "driveshaft plunger kit";

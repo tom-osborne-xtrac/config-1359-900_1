@@ -2,42 +2,33 @@
 
 /* REV. 0	ORIGINAL */
 
-
-
 /* ****** CRLF1 ****** */
 
-string CRLF1;
-CRLF1 = "\n";
-
-
+string CRLF1 = "\n";
+string Included;
+string Excluded;
+string TBC;
 
 /* ****** RATIOS ****** */
 
-string Laycode;
-Laycode = (((Inputs.FIRST_RATIO.Value == "13:35") && (Inputs.SECOND_RATIO.Value == "16:33")) ? ("A") 
-: (((Inputs.FIRST_RATIO.Value == "14:34") && (Inputs.SECOND_RATIO.Value == "16:32")) ? ("B") 
-: (((Inputs.FIRST_RATIO.Value == "14:34") && (Inputs.SECOND_RATIO.Value == "16:33")) ? ("C") 
-: (((Inputs.FIRST_RATIO.Value == "13:35") && (Inputs.SECOND_RATIO.Value == "15:33")) ? ("D") 
-: (((Inputs.FIRST_RATIO.Value == "13:37") && (Inputs.SECOND_RATIO.Value == "15:33")) ? ("E")	
-: (((Inputs.FIRST_RATIO.Value == "12:37") && (Inputs.SECOND_RATIO.Value == "14:33")) ? ("F")
-: (((Inputs.FIRST_RATIO.Value == "14:36") && (Inputs.SECOND_RATIO.Value == "15:33")) ? ("G")
-: (((Inputs.FIRST_RATIO.Value == "13:37") && (Inputs.SECOND_RATIO.Value == "14:32")) ? ("H")
-: (((Inputs.FIRST_RATIO.Value == "14:36") && (Inputs.SECOND_RATIO.Value == "16:33")) ? ("J")
-: (((Inputs.FIRST_RATIO.Value == "14:32") && (Inputs.SECOND_RATIO.Value == "16:30")) ? ("K")
-: ("")))))))))));
+// First/Second Ratio.
+if (Inputs.FIRST_SECOND_RATIO.Value != "") {
+    // If we have, then set the text
+    string Laycode = Inputs.FIRST_SECOND_RATIO.Value.Substring(0, 1);
+    Inputs.FIRST_PART.Value = "1359-42M-000A" + Laycode;
 
+    // Add to Included list
+    Included += "First gear ratio = " + Inputs.FIRST_RATIO.Value + CRLF1;
+} else {
+    // Otherwise add to TBC list
+    TBC += "First gear ratio" + CRLF1;
+}
 
-Inputs.FIRST_PART.Value = ((Laycode == "") ? ("") : ("1359-42M-000A" + Laycode));
-
-Inputs.THIRD_PART.Value = ((Inputs.THIRD_RATIO.Value == "") ? ("") : ("1359-42M-3A-" + Inputs.THIRD_RATIO.Value.Replace(":","")));
-
-Inputs.FOURTH_PART.Value = ((Inputs.FOURTH_RATIO.Value == "") ? ("") : ("1359-42M-4A-" + Inputs.FOURTH_RATIO.Value.Replace(":","")));
-
-Inputs.FIFTH_PART.Value = ((Inputs.FIFTH_RATIO.Value == "") ? ("") : ("1359-42M-4B-" + Inputs.FIFTH_RATIO.Value.Replace(":","")));
-
-Inputs.SIXTH_PART.Value = ((Inputs.SIXTH_RATIO.Value == "") ? ("") : ("1359-42M-4B-" + Inputs.SIXTH_RATIO.Value.Replace(":","")));
-
-Inputs.SEVENTH_PART.Value = ((Inputs.SEVENTH_RATIO.Value == "") ? ("") : ("1359-42M-4C-" + Inputs.SEVENTH_RATIO.Value.Replace(":","")));
+if (Inputs.THIRD_RATIO.Value != "" && )   { "1359-42M-3A-" + Inputs.THIRD_RATIO.Value.Replace(":","")};
+if (Inputs.FOURTH_RATIO.Value != "")  { "1359-42M-4A-" + Inputs.FOURTH_RATIO.Value.Replace(":","")};
+if (Inputs.FIFTH_RATIO.Value != "")   { "1359-42M-4B-" + Inputs.FIFTH_RATIO.Value.Replace(":","")};
+if (Inputs.SIXTH_RATIO.Value != "")   { "1359-42M-4B-" + Inputs.SIXTH_RATIO.Value.Replace(":","")};
+if (Inputs.SEVENTH_RATIO.Value != "") { "1359-42M-4C-" + Inputs.SEVENTH_RATIO.Value.Replace(":","")};
 
 
 string YFirst;

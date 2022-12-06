@@ -57,33 +57,14 @@ if (Inputs.INSTALLATION.Value == "BMW - Test") {
     Inputs.DRIVE.Value = "30";
     Inputs.COAST.Value = "60";
     Inputs.OUTFLANGE_REQD.Value = "plug kit";
-    Inputs.HYBRID.Value = "18/31/43";
+    Inputs.HYBRID.Value = "14/24/33";
     Inputs.AC_PULLEY.Value = "Yes";
     Inputs.MANIFOLD.Value = "standard";
     Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
 }
 
-if (Inputs.INSTALLATION.Value == "Dallara") {
-    Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "13:35";
-    Inputs.SECOND_RATIO.Value = "16:33";
-    Inputs.THIRD_RATIO.Value = "16:27";
-    Inputs.FOURTH_RATIO.Value = "19:27";
-    Inputs.FIFTH_RATIO.Value = "21:26";
-    Inputs.SIXTH_RATIO.Value = "23:25";
-    Inputs.SEVENTH_RATIO.Value = "24:23";
-    Inputs.BEVEL_RATIO.Value = "23:21";
-    Inputs.FINAL_RATIO.Value = "13:49";
-    Inputs.OUTFLANGE_REQD.Value = "";
-    Inputs.PRELOAD_VALUE.Value = "0";
-    Inputs.AC_PULLEY.Value = "Yes";
-    Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
-    Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
-}
-
-if (Inputs.INSTALLATION.Value == "GM") {
+if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
     Inputs.FIRST_RATIO.Value = "13:35";
     Inputs.SECOND_RATIO.Value = "16:33";
@@ -98,7 +79,7 @@ if (Inputs.INSTALLATION.Value == "GM") {
     Inputs.COAST.Value = "60";
     Inputs.OUTFLANGE_REQD.Value = "plug kit";
     Inputs.PRELOAD_VALUE.Value = "0";
-    Inputs.HYBRID.Value = "21/28/46";
+    Inputs.HYBRID.Value = "16/23/35";
     Inputs.AC_PULLEY.Value = "Yes";
     Inputs.MANIFOLD.Value = "standard";
     Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
@@ -119,7 +100,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Short") {
     Inputs.DRIVE.Value = "30";
     Inputs.COAST.Value = "60";
     Inputs.OUTFLANGE_REQD.Value = "driveshaft plunger kit";
-    Inputs.HYBRID.Value = "25/24/50";
+    Inputs.HYBRID.Value = "20/20/40";
     Inputs.AC_PULLEY.Value = "No";
     Inputs.MANIFOLD.Value = "standard";
     Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
@@ -163,7 +144,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.DRIVE.Value = "30";
     Inputs.COAST.Value = "60";
     Inputs.OUTFLANGE_REQD.Value = "driveshaft plunger kit";
-    Inputs.HYBRID.Value = "25/24/50";
+    Inputs.HYBRID.Value = "20/20/40";
     Inputs.AC_PULLEY.Value = "No";
     Inputs.MANIFOLD.Value = "standard";
     Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";

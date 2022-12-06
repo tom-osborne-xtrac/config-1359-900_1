@@ -1,31 +1,33 @@
 /* ****** 1159 - On-leave Inputs.INSTALLATION.Value ****** */
 
-if (Inputs.INSTALLATION.Value == "Audi") {
-    Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "13:35";
-    Inputs.SECOND_RATIO.Value = "16:33";
-    Inputs.THIRD_RATIO.Value = "16:27";
-    Inputs.FOURTH_RATIO.Value = "19:27";
-    Inputs.FIFTH_RATIO.Value = "19:23";
-    Inputs.SIXTH_RATIO.Value = "19:20";
-    Inputs.SEVENTH_RATIO.Value = "27:25";
-    Inputs.BEVEL_RATIO.Value = "21:22";
-    Inputs.FINAL_RATIO.Value = "15:47";
-    Inputs.DRIVE.Value = "45";
-    Inputs.COAST.Value = "60";
-    Inputs.OUTFLANGE_REQD.Value = "plug kit";
-    Inputs.HYBRID.Value = "19/30/44";
-    Inputs.AC_PULLEY.Value = "Yes";
-    Inputs.PACKING_CRATE.Value = "Yes";
-    Inputs.MANIFOLD.Value = "standard";
-    Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
-    Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
-}
+// if (Inputs.INSTALLATION.Value == "Audi") {
+//     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
+//     Inputs.FIRST_SECOND_RATIO.Value = "E 13:37 / 15:33";
+//     Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+//     Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
+//     Inputs.THIRD_RATIO.Value = "16:27";
+//     Inputs.FOURTH_RATIO.Value = "19:27";
+//     Inputs.FIFTH_RATIO.Value = "19:23";
+//     Inputs.SIXTH_RATIO.Value = "19:20";
+//     Inputs.SEVENTH_RATIO.Value = "27:25";
+//     Inputs.BEVEL_RATIO.Value = "21:22";
+//     Inputs.FINAL_RATIO.Value = "15:47";
+//     Inputs.DRIVE.Value = "45";
+//     Inputs.COAST.Value = "60";
+//     Inputs.OUTFLANGE_REQD.Value = "plug kit";
+//     Inputs.HYBRID.Value = "19/30/44";
+//     Inputs.AC_PULLEY.Value = "Yes";
+//     Inputs.PACKING_CRATE.Value = "Yes";
+//     Inputs.MANIFOLD.Value = "standard";
+//     Inputs.INCLUDE1254GEARCHANGE.Value = "n/a";
+//     Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
+// }
 
 if (Inputs.INSTALLATION.Value == "BMW") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "13:35";
-    Inputs.SECOND_RATIO.Value = "15:33";
+    Inputs.FIRST_SECOND_RATIO.Value = "E 13:37 / 15:33";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
     Inputs.THIRD_RATIO.Value = "18:31";
     Inputs.FOURTH_RATIO.Value = "19:27";
     Inputs.FIFTH_RATIO.Value = "19:23";
@@ -45,8 +47,9 @@ if (Inputs.INSTALLATION.Value == "BMW") {
 
 if (Inputs.INSTALLATION.Value == "BMW - Test") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "12:37";
-    Inputs.SECOND_RATIO.Value = "14:33";
+    Inputs.FIRST_SECOND_RATIO.Value = "F 12:37 / 14:33";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
     Inputs.THIRD_RATIO.Value = "16:31";
     Inputs.FOURTH_RATIO.Value = "16:26";
     Inputs.FIFTH_RATIO.Value = "18:25";
@@ -66,8 +69,9 @@ if (Inputs.INSTALLATION.Value == "BMW - Test") {
 
 if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "13:35";
-    Inputs.SECOND_RATIO.Value = "16:33";
+    Inputs.FIRST_SECOND_RATIO.Value = "A 13:35 / 16:33";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
     Inputs.THIRD_RATIO.Value = "16:27";
     Inputs.FOURTH_RATIO.Value = "19:27";
     Inputs.FIFTH_RATIO.Value = "21:26";
@@ -88,8 +92,9 @@ if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM")
 
 if (Inputs.INSTALLATION.Value == "HPD - Short") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "14:36";
-    Inputs.SECOND_RATIO.Value = "16:33";
+    Inputs.FIRST_SECOND_RATIO.Value = "J 14:36 / 16:33";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
     Inputs.THIRD_RATIO.Value = "18:31";
     Inputs.FOURTH_RATIO.Value = "17:26";
     Inputs.FIFTH_RATIO.Value = "20:27";
@@ -109,8 +114,9 @@ if (Inputs.INSTALLATION.Value == "HPD - Short") {
 
 if (Inputs.INSTALLATION.Value == "Porsche") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "13:35";
-    Inputs.SECOND_RATIO.Value = "16:33";
+    Inputs.FIRST_SECOND_RATIO.Value = "J 14:36 / 16:33";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
     Inputs.THIRD_RATIO.Value = "16:27";
     Inputs.FOURTH_RATIO.Value = "19:27";
     Inputs.FIFTH_RATIO.Value = "19:23";
@@ -132,8 +138,9 @@ if (Inputs.INSTALLATION.Value == "Porsche") {
 
 if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "14:32";
-    Inputs.SECOND_RATIO.Value = "16:30";
+    Inputs.FIRST_SECOND_RATIO.Value = "K 14:32 / 16:30";
+    Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
+    Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
     Inputs.THIRD_RATIO.Value = "17:30";
     Inputs.FOURTH_RATIO.Value = "17:26";
     Inputs.FIFTH_RATIO.Value = "20:27";

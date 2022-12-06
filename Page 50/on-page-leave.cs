@@ -194,11 +194,19 @@ string XCatchTank ;
 XCatchTank = ( ((Inputs.C_TANK_BLANK.Value == "No") && (Inputs.INTERNAL_C_TANK.Value == "not required"))  ? ("Catch tank blanking plate" + CRLF3 + "Internal catch tank" + CRLF3) 
 : ( (Inputs.C_TANK_BLANK.Value == "No")  ? ("Catch tank blanking plate" + CRLF3)
 : ("")));
-    
-    
 
 
-/* ****** Inputs.CLUTCH.Value SHAFT ****** */
+/* GEARCHANGE UNIT */
+
+string YGearchangeUnit;
+YGearchangeUnit = ( ( Inputs.GEARCHANGE_UNIT.Value == "A/V ring only" ) ? ( "Include 00P-190-1032A IVA A/V ring" + CLRF3 ) 
+: ((Inputs.GEARCHANGE_UNIT.Value == "1254 IVA + A/V ring" ) ? ( "Fit 1254-932-000A + 00P-190-1032A to gearbox" + CLRF3 ) 
+: ((Inputs.GEARCHANGE_UNIT.Value == "None" ) ? ("") : (""))));
+
+string OGearchangeUnit;
+OGearchangeUnit = ((Inputs.GEARCHANGE_UNIT.Value == "")  ? ("Gearchange unit requirement" + CRLF3) : (""));
+
+/* ****** CLUTCH SHAFT ****** */
 
 string Clutchshaftpart ;
 /* ****** 1359 - On-leave Inputs.CLUTCH_SHAFT.Value ****** */
@@ -253,8 +261,8 @@ PackingCrate = ( (Inputs.PACKING_CRATE.Value == "Yes")  ? ("Packing Crate Requir
 
 /* ****** COMPILE TEXT ****** */
 
-Inputs.YPAGE3.Value = YHybrid + YAlternator + YCBaffle + YTransport + YFloor + YCatchTank + YCManifold + YClshaft + PackingCrate;
-Inputs.OPAGE3.Value = OHybrid + OAlternator + OCBaffle + OTransport + OFloor + OCatchTank + OCManifold + OClshaft;
+Inputs.YPAGE3.Value = YHybrid + YAlternator + YCBaffle + YTransport + YFloor + YCatchTank + YCManifold + YGearchangeUnit + YClshaft + PackingCrate;
+Inputs.OPAGE3.Value = OHybrid + OAlternator + OCBaffle + OTransport + OFloor + OCatchTank + OCManifold + OGearchangeUnit + OClshaft;
 Inputs.XPAGE3.Value = XAlternator + XCBaffle + XTransport + XFloor + XCatchTank + XClshaft;
 
 

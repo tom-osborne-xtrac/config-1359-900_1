@@ -1,5 +1,29 @@
 /* ****** 1359 - On-leave Inputs.HYBRID.Value ****** */
 
+if (Inputs.HYBRID.Value == "14/27/35") {
+    Inputs.Z1_PART.Value = "1359-441-1C-1427";
+    Inputs.Z2_PART.Value = "1359-441-2B-1427";
+    Inputs.Z3_PART.Value = "1359-441-0B-2735";
+}
+
+if (Inputs.HYBRID.Value == "14/24/33") {
+    Inputs.Z1_PART.Value = "1359-441-1C-1424";
+    Inputs.Z2_PART.Value = "1359-441-2B-1424";
+    Inputs.Z3_PART.Value = "1359-441-0B-2433";
+}
+
+if (Inputs.HYBRID.Value == "14/23/32") {
+    Inputs.Z1_PART.Value = "1359-441-1C-1423";
+    Inputs.Z2_PART.Value = "1359-441-2B-1423";
+    Inputs.Z3_PART.Value = "1359-441-0B-2332";
+}
+
+if (Inputs.HYBRID.Value == "16/23/35") {
+    Inputs.Z1_PART.Value = "1359-441-1C-1623";
+    Inputs.Z2_PART.Value = "1359-441-2B-1623";
+    Inputs.Z3_PART.Value = "1359-441-0B-2335";
+}
+
 if (Inputs.HYBRID.Value == "16/33/41") {
     Inputs.Z1_PART.Value = "1359-441-1A-1633";
     Inputs.Z2_PART.Value = "1359-441-2A-1633";
@@ -18,10 +42,22 @@ if (Inputs.HYBRID.Value == "18/31/43") {
     Inputs.Z3_PART.Value = "1359-441-0A-3143";
 }
 
+if (Inputs.HYBRID.Value == "19/21/39") {
+    Inputs.Z1_PART.Value = "1359-441-1C-1921";
+    Inputs.Z2_PART.Value = "1359-441-2B-1921";
+    Inputs.Z3_PART.Value = "1359-441-0B-2139";
+}
+
 if (Inputs.HYBRID.Value == "19/30/44") {
     Inputs.Z1_PART.Value = "1359-441-1A-1930";
     Inputs.Z2_PART.Value = "1359-441-2A-1930";
     Inputs.Z3_PART.Value = "1359-441-0A-3044";
+}
+
+if (Inputs.HYBRID.Value == "20/20/40") {
+    Inputs.Z1_PART.Value = "1359-441-1C-2020";
+    Inputs.Z2_PART.Value = "1359-441-2B-2020";
+    Inputs.Z3_PART.Value = "1359-441-0B-2040";
 }
 
 if (Inputs.HYBRID.Value == "20/29/45") {

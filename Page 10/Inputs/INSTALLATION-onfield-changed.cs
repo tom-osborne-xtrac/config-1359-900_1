@@ -88,8 +88,8 @@ if (Inputs.INSTALLATION.Value == "Dallara" || Inputs.INSTALLATION.Value == "GM")
 
 if (Inputs.INSTALLATION.Value == "HPD - Short") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "14:34";
-    Inputs.SECOND_RATIO.Value = "16:32";
+    Inputs.FIRST_RATIO.Value = "14:36";
+    Inputs.SECOND_RATIO.Value = "16:33";
     Inputs.THIRD_RATIO.Value = "18:31";
     Inputs.FOURTH_RATIO.Value = "17:26";
     Inputs.FIFTH_RATIO.Value = "20:27";
@@ -132,8 +132,8 @@ if (Inputs.INSTALLATION.Value == "Porsche") {
 
 if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
-    Inputs.FIRST_RATIO.Value = "14:34";
-    Inputs.SECOND_RATIO.Value = "16:33";
+    Inputs.FIRST_RATIO.Value = "14:32";
+    Inputs.SECOND_RATIO.Value = "16:30";
     Inputs.THIRD_RATIO.Value = "17:30";
     Inputs.FOURTH_RATIO.Value = "17:26";
     Inputs.FIFTH_RATIO.Value = "20:27";

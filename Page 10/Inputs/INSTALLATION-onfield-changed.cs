@@ -50,7 +50,7 @@ if (Inputs.INSTALLATION.Value == "BMW - Test") {
     Inputs.FIRST_SECOND_RATIO.Value = "F 12:37 / 14:33";
     Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
     Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
-    Inputs.THIRD_RATIO.Value = "16:31";
+    Inputs.THIRD_RATIO.Value = "16:30";
     Inputs.FOURTH_RATIO.Value = "16:26";
     Inputs.FIFTH_RATIO.Value = "18:25";
     Inputs.SIXTH_RATIO.Value = "21:26";
@@ -95,7 +95,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Short") {
     Inputs.FIRST_SECOND_RATIO.Value = "J 14:36 / 16:33";
     Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
     Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
-    Inputs.THIRD_RATIO.Value = "18:31";
+    Inputs.THIRD_RATIO.Value = "17:30";
     Inputs.FOURTH_RATIO.Value = "17:26";
     Inputs.FIFTH_RATIO.Value = "20:27";
     Inputs.SIXTH_RATIO.Value = "19:23";
@@ -141,7 +141,7 @@ if (Inputs.INSTALLATION.Value == "HPD - Daytona") {
     Inputs.FIRST_SECOND_RATIO.Value = "K 14:32 / 16:30";
     Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
     Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
-    Inputs.THIRD_RATIO.Value = "17:30";
+    Inputs.THIRD_RATIO.Value = "16:26";
     Inputs.FOURTH_RATIO.Value = "17:26";
     Inputs.FIFTH_RATIO.Value = "20:27";
     Inputs.SIXTH_RATIO.Value = "19:23";

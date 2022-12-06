@@ -83,7 +83,7 @@ string YSixth;
  
  
  
- /* ****** FINAL Inputs.DRIVE.Value ****** */
+ /* ****** FINAL DRIVE ****** */
  
  Inputs.FINAL_PART.Value = ((Inputs.FINAL_RATIO.Value == "") ? ("") : ("1359-449-0A-" + Inputs.FINAL_RATIO.Value.Replace(":","")));
  

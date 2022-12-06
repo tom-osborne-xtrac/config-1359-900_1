@@ -24,7 +24,8 @@
  : (((Inputs.FIRST_RATIO.Value == "14:36") && (Inputs.SECOND_RATIO.Value == "15:33")) ? ("G")
  : (((Inputs.FIRST_RATIO.Value == "13:37") && (Inputs.SECOND_RATIO.Value == "14:32")) ? ("H")
  : (((Inputs.FIRST_RATIO.Value == "14:36") && (Inputs.SECOND_RATIO.Value == "16:33")) ? ("J")
- : (""))))))))));
+ : (((Inputs.FIRST_RATIO.Value == "14:32") && (Inputs.SECOND_RATIO.Value == "16:30")) ? ("K")
+ : ("")))))))))));
  
  
  Inputs.FIRST_PART.Value = ((Laycode == "") ? ("") : ("1359-42M-000A" + Laycode));

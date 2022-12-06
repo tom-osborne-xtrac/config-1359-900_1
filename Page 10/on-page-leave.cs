@@ -76,11 +76,15 @@ string YSixth;
  string OSeventh;
  OSeventh = (((Inputs.SEVENTH_RATIO.Value == "") || (Inputs.SEVENTH_RATIO.Value == "Unknown")) ? ("Seventh gear ratio" + CRLF1) : (""));
  
+ string YSeventhType;
+ YSeventhType = ((Inputs.SEVENTH_RATIO.Value != "") ? (Inputs.SEVENTH_TYPE.Value + " spec 7th gear") + CRLF1 : (""));
+ string OSeventhType;
+ OSeventhType = ((Inputs.SEVENTH_RATIO.Value == "") ? ("7th gear dog spec" + CRLF1) : (""));
+
  string YRFinish;
  YRFinish = ((Inputs.FINISH_RATIO.Value != "") ? ("All ratios supplied with " + Inputs.FINISH_RATIO.Value + " surface finish" + CRLF1) : (""));
  string ORFinish;
  ORFinish = ((Inputs.FINISH_RATIO.Value == "") ? ("Ratio surface finish*" + CRLF1) : (""));
- 
  
  
  /* ****** FINAL DRIVE ****** */
@@ -109,5 +113,5 @@ string YSixth;
  
  /* ****** COMPILE TEXT ****** */
  
- Inputs.YPAGE1.Value = YFirst + YSecond + YThird + YFourth + YFifth + YSixth + YSeventh + YRFinish + YFinal + YBevel;
- Inputs.OPAGE1.Value = OFirst + OSecond + OThird + OFourth + OFifth + OSixth + OSeventh + ORFinish + OFinal + OBevel;
+ Inputs.YPAGE1.Value = YFirst + YSecond + YThird + YFourth + YFifth + YSixth + YSeventh + YSeventhType + YRFinish + YFinal + YBevel;
+ Inputs.OPAGE1.Value = OFirst + OSecond + OThird + OFourth + OFifth + OSixth + OSeventh + OSeventhType + ORFinish + OFinal + OBevel;

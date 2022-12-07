@@ -56,11 +56,18 @@ if (Inputs.SEVENTH_RATIO.Value != "") {
     TBCTxt += "Seventh gear ratio" + CRLF1;
 };
 
+// Seventh Gear Type.
+if (Inputs.SEVENTH_TYPE.Value != "") {
+    IncludedTxt += Inputs.SEVENTH_TYPE.Value + " spec 7th gear" + CRLF1;
+} else {
+    TBCTxt += "Ratio surface finish*" + CRLF1;
+}
+
 // Ratio finish specification
 if ( Inputs.FINISH_RATIO.Value != "" ) {
     IncludedTxt += "All ratios supplied with " + Inputs.FINISH_RATIO.Value + " surface finish" + CRLF1;
 } else {
-    TBCTxt += "Ratio surface finish*" + CRLF1;
+    TBCTxt += "7th gear dog spec" + CRLF1;
 }
 
 // Final Drive & Mainshaft.
@@ -68,7 +75,7 @@ if ( Inputs.FINAL_RATIO.Value != "" ) {
     Inputs.FINAL_PART.Value = "1359-449-0A-" + Inputs.FINAL_RATIO.Value.Replace(":","");
     Inputs.MAINSHAFT_PART.Value = "1359-422-0A-" + Inputs.FINAL_RATIO.Value.Replace(":","");
     IncludedTxt += "Final drive ratio = " + Inputs.FINAL_RATIO.Value + " supplied with " + Inputs.FINISH_FINAL.Value + " surface finish" + CRLF1;
-    IncludedTxt += "Mainshaft supplied with Xtrem surface finish" + CRLF1;
+    // IncludedTxt += "Mainshaft supplied with Xtrem surface finish" + CRLF1;
 } else {
     TBCTxt += "Final drive ratio" + CRLF1;
 }

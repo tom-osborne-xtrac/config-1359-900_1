@@ -199,12 +199,12 @@ XCatchTank = ( ((Inputs.C_TANK_BLANK.Value == "No") && (Inputs.INTERNAL_C_TANK.V
 /* GEARCHANGE UNIT */
 
 string YGearchangeUnit;
-YGearchangeUnit = ( ( Inputs.GEARCHANGE_UNIT.Value == "A/V ring only" ) ? ( "Include 00P-190-1032A IVA A/V ring" + CLRF3 ) 
-: ((Inputs.GEARCHANGE_UNIT.Value == "1254 IVA + A/V ring" ) ? ( "Fit 1254-932-000A + 00P-190-1032A to gearbox" + CLRF3 ) 
+YGearchangeUnit = ( ( Inputs.GEARCHANGE_UNIT.Value == "A/V ring only" ) ? ( "Include 00P-190-1032A IVA A/V ring" + CRLF3 ) 
+: ((Inputs.GEARCHANGE_UNIT.Value == "1254 IVA + A/V ring" ) ? ( "Fit 1254-932-000A + 00P-190-1032A to gearbox" + CRLF3 ) 
 : ((Inputs.GEARCHANGE_UNIT.Value == "None" ) ? ("") : (""))));
 
 string OGearchangeUnit;
-OGearchangeUnit = ((Inputs.GEARCHANGE_UNIT.Value == "")  ? ("Gearchange unit requirement" + CRLF3) : (""));
+OGearchangeUnit = ((Inputs.GEARCHANGE_UNIT.Value == "")  ? ("Gearchange unit requirement" + CRLF3 ) : (""));
 
 /* ****** CLUTCH SHAFT ****** */
 

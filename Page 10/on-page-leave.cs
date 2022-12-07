@@ -1,15 +1,10 @@
-/* ****** 1159 - On-leave PAGE 10 Rev 0 ****** */
-
-/* REV. 0	ORIGINAL */
-
-/* ****** CRLF1 ****** */
-
+// CRLF
 string CRLF1 = "\n";
-string IncludedTxt;
-string ExcludedTxt;
-string TBCTxt;
 
-/* ****** RATIOS ****** */
+// Output strings
+string IncludedTxt = "";
+string ExcludedTxt = "";
+string TBCTxt = "";
 
 // First/Second Ratio [String format is: "A 13:35 / 16:33"].
 if (Inputs.FIRST_SECOND_RATIO.Value != "") {
@@ -62,7 +57,7 @@ if (Inputs.SEVENTH_RATIO.Value != "") {
 };
 
 // Ratio finish specification
-if ( Inputs._FINISH_RATIO.Value != "" ) {
+if ( Inputs.FINISH_RATIO.Value != "" ) {
     IncludedTxt += "All ratios supplied with " + Inputs.FINISH_RATIO.Value + " surface finish" + CRLF1;
 } else {
     TBCTxt += "Ratio surface finish*" + CRLF1;

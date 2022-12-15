@@ -135,7 +135,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.FOURTH_RATIO.Value = "19:27";
         Inputs.FIFTH_RATIO.Value = "19:23";
         Inputs.SIXTH_RATIO.Value = "19:20";
-        Inputs.SEVENTH_RATIO.Value = "27:25";
+        Inputs.SEVENTH_RATIO.Value = "24:23";
         Inputs.SEVENTH_TYPE.Value = "Three-dog";
         Inputs.BEVEL_RATIO.Value = "21:22";
         Inputs.FINAL_RATIO.Value = "14:48";

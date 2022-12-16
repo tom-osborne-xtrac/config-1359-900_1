@@ -16,7 +16,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.HYBRID.Value = "19/30/44";
         Inputs.AC_PULLEY.Value = "Yes";
         Inputs.PACKING_CRATE.Value = "Yes";
-        Inputs.MANIFOLD.Value = "standard";
+        Inputs.MANIFOLD.Value = "Standard kit with pipe studs";
         Inputs.GEARCHANGE_UNIT.Value = "None";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
         break;
@@ -37,7 +37,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.OUTFLANGE_REQD.Value = "plug kit";
         Inputs.HYBRID.Value = "19/30/44";
         Inputs.AC_PULLEY.Value = "No";
-        Inputs.MANIFOLD.Value = "standard";
+        Inputs.MANIFOLD.Value = "Standard kit with pipe studs";
         Inputs.GEARCHANGE_UNIT.Value = "A/V ring only";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
         break;
@@ -58,13 +58,12 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.OUTFLANGE_REQD.Value = "plug kit";
         Inputs.HYBRID.Value = "14/24/33";
         Inputs.AC_PULLEY.Value = "Yes";
-        Inputs.MANIFOLD.Value = "standard";
+        Inputs.MANIFOLD.Value = "Standard kit with pipe studs";
         Inputs.GEARCHANGE_UNIT.Value = "A/V ring only";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
         break;
 
-    case "Dallara":
-    case "GM":
+    case "Dallara": case "GM":
         Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "A 13:35 / 16:33";
         Inputs.THIRD_RATIO.Value = "16:27";
@@ -81,7 +80,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.PRELOAD_VALUE.Value = "0";
         Inputs.HYBRID.Value = "16/23/35";
         Inputs.AC_PULLEY.Value = "Yes";
-        Inputs.MANIFOLD.Value = "standard";
+        Inputs.MANIFOLD.Value = "Standard kit with pipe studs";
         Inputs.GEARCHANGE_UNIT.Value = "None";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "Yes";
         break;
@@ -102,7 +101,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.OUTFLANGE_REQD.Value = "driveshaft plunger kit";
         Inputs.HYBRID.Value = "20/20/40";
         Inputs.AC_PULLEY.Value = "No";
-        Inputs.MANIFOLD.Value = "standard";
+        Inputs.MANIFOLD.Value = "Standard kit with pipe studs";
         Inputs.GEARCHANGE_UNIT.Value = "None";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "No";
         break;
@@ -123,7 +122,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.OUTFLANGE_REQD.Value = "driveshaft plunger kit";
         Inputs.HYBRID.Value = "20/20/40";
         Inputs.AC_PULLEY.Value = "No";
-        Inputs.MANIFOLD.Value = "standard";
+        Inputs.MANIFOLD.Value = "Standard kit with pipe studs";
         Inputs.GEARCHANGE_UNIT.Value = "None";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "No";
         break;
@@ -138,7 +137,7 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.SEVENTH_RATIO.Value = "24:23";
         Inputs.SEVENTH_TYPE.Value = "Three-dog";
         Inputs.BEVEL_RATIO.Value = "21:22";
-        Inputs.FINAL_RATIO.Value = "14:48";
+        Inputs.FINAL_RATIO.Value = "15:47";
         Inputs.DRIVE.Value = "45";
         Inputs.COAST.Value = "70";
         Inputs.OUTFLANGE_REQD.Value = "plug kit";
@@ -147,13 +146,36 @@ switch ( Inputs.INSTALLATION.Value ) {
         Inputs.AC_PULLEY.Value = "Yes";
         Inputs.PACKING_CRATE.Value = "Yes";
         Inputs.GEARCHANGE_UNIT.Value = "1254 IVA + A/V ring";
-        Inputs.MANIFOLD.Value = "customer specific";
+        Inputs.MANIFOLD.Value = "Porsche specific kit";
         Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "No";
+        break;
+
+    default:
+        Inputs.DRAWING_VARIANT.Value = "";
+        Inputs.FIRST_SECOND_RATIO.Value = "";
+        Inputs.THIRD_RATIO.Value = "";
+        Inputs.FOURTH_RATIO.Value = "";
+        Inputs.FIFTH_RATIO.Value = "";
+        Inputs.SIXTH_RATIO.Value = "";
+        Inputs.SEVENTH_RATIO.Value = "";
+        Inputs.SEVENTH_TYPE.Value = "";
+        Inputs.BEVEL_RATIO.Value = "";
+        Inputs.FINAL_RATIO.Value = "";
+        Inputs.DRIVE.Value = "";
+        Inputs.COAST.Value = "";
+        Inputs.OUTFLANGE_REQD.Value = "";
+        Inputs.PRELOAD_VALUE.Value = "";
+        Inputs.HYBRID.Value = "";
+        Inputs.AC_PULLEY.Value = "";
+        Inputs.PACKING_CRATE.Value = "";
+        Inputs.GEARCHANGE_UNIT.Value = "";
+        Inputs.MANIFOLD.Value = "";
+        Inputs.INCLUDEBELLHOUSINGDOWELS.Value = "";
         break;
 }
 
-// Set 1st/2nd from selection
-if ( Inputs.FIRST_SECOND_RATIO.Value ) {
+// Set 1st/2nd from FIRST_SECOND_RATIO selection
+if ( Inputs.FIRST_SECOND_RATIO.Value != "" ) {
     Inputs.FIRST_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(2, 5);
     Inputs.SECOND_RATIO.Value = Inputs.FIRST_SECOND_RATIO.Value.Substring(10, 5);
 }

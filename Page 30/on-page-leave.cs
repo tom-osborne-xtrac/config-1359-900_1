@@ -2,16 +2,17 @@ string CRLF2 = "\n";
 string DEG = "°";
 
 /* ****** DIFF ****** */
+string[] diff_options_requiring_ramps = new string[] { 
+    "nitrogen preload",
+    "non-ext. adjustable PPD",
+    "ext. adjustable PNPD"
+};
+bool Ramps = diff_options_requiring_ramps.Contains(Inputs.DIFF_TYPE.Value);
 
-string Ramps ;
-Ramps = ( ((Inputs.DIFF_TYPE.Value == "nitrogen preload") || (Inputs.DIFF_TYPE.Value == "non-ext. adjustable PPD") || (Inputs.DIFF_TYPE.Value == "ext. adjustable PNPD")) ? ("Yes") : (""));
-
-string Angles ;
-Angles = ( ((Ramps == "Yes") && (Inputs.DRIVE.Value != "") && (Inputs.DRIVE.Value != "Unknown") && (Inputs.COAST.Value != "") && (Inputs.COAST.Value != "Unknown")) ? ("Yes") : (""));
+bool Angles = (Inputs.DRIVE.Value != "") && (Inputs.DRIVE.Value != "Unknown") && (Inputs.COAST.Value != "") && (Inputs.COAST.Value != "Unknown");
 
 string Discs ;
 Discs = ( ((Inputs.DIFF_TYPE.Value == "nitrogen preload") || (Inputs.DIFF_TYPE.Value == "non-ext. adjustable PPD") || (Inputs.DIFF_TYPE.Value == "ext. adjustable PNPD")) ? ("Yes") : (""));
-
 
 
 /* ****** RAMPS ****** */

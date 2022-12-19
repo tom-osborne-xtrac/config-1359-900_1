@@ -2,11 +2,35 @@ string CRLF3 = "\n";
 
 string Included_Text = "";
 string Excluded_Text = "";
-string Job_Text = "";
+string Job_Text = "ASSEMBLY NOTES" + CRLF3;
 string TBC_Text = "";
 
 /* ****** HYBRID GEAR RATIOS ****** */
 switch (Inputs.HYBRID.Value) {
+    case "14/27/35":
+        Inputs.Z1_PART.Value = "1359-441-1C-1427";
+        Inputs.Z2_PART.Value = "1359-441-2B-1427";
+        Inputs.Z3_PART.Value = "1359-441-0B-2735";
+        break;
+
+    case "14/24/33":
+        Inputs.Z1_PART.Value = "1359-441-1C-1424";
+        Inputs.Z2_PART.Value = "1359-441-2B-1424";
+        Inputs.Z3_PART.Value = "1359-441-0B-2433";
+        break;
+
+    case "14/23/32":
+        Inputs.Z1_PART.Value = "1359-441-1C-1423";
+        Inputs.Z2_PART.Value = "1359-441-2B-1423";
+        Inputs.Z3_PART.Value = "1359-441-0B-2332";
+        break;
+
+    case "16/23/35":
+        Inputs.Z1_PART.Value = "1359-441-1C-1623";
+        Inputs.Z2_PART.Value = "1359-441-2B-1623";
+        Inputs.Z3_PART.Value = "1359-441-0B-2335";
+        break;
+
     case "16/33/41":
         Inputs.Z1_PART.Value = "1359-441-1A-1633";
         Inputs.Z2_PART.Value = "1359-441-2A-1633";
@@ -24,11 +48,23 @@ switch (Inputs.HYBRID.Value) {
         Inputs.Z2_PART.Value = "1359-441-2A-1831";
         Inputs.Z3_PART.Value = "1359-441-0A-3143";
         break;
-    
+
+    case "19/21/39":
+        Inputs.Z1_PART.Value = "1359-441-1C-1921";
+        Inputs.Z2_PART.Value = "1359-441-2B-1921";
+        Inputs.Z3_PART.Value = "1359-441-0B-2139";
+        break;
+
     case "19/30/44":
         Inputs.Z1_PART.Value = "1359-441-1A-1930";
         Inputs.Z2_PART.Value = "1359-441-2A-1930";
         Inputs.Z3_PART.Value = "1359-441-0A-3044";
+        break;
+
+    case "20/20/40":
+        Inputs.Z1_PART.Value = "1359-441-1C-2020";
+        Inputs.Z2_PART.Value = "1359-441-2B-2020";
+        Inputs.Z3_PART.Value = "1359-441-0B-2040";
         break;
 
     case "20/29/45":
@@ -83,8 +119,10 @@ if (Inputs.HYBRID.Value != "") {
     string z3 = "Z3=" + Inputs.HYBRID.Value.Substring(6, 2) + " - ";
     
     string ToothCountSpec = "High tooth count spec";
+    Inputs.HYBRID_TOOTH_COUNT.Value = "high";
     if (HybridLowToothCountRatios.Contains(Inputs.HYBRID.Value)) {
         ToothCountSpec = "Low tooth count spec";
+        Inputs.HYBRID_TOOTH_COUNT.Value = "low";
     }
     
     // Example output: "Hybrid gears: Z1=19, Z2=30, Z3=44 - High tooth count spec"
@@ -122,7 +160,7 @@ switch (Inputs.AC_PULLEY.Value) {
         break;
 
     case "No":
-        Included_Text += "A/C Pulley assemly excluded" + CRLF3;
+        Excluded_Text += "A/C Pulley assemly excluded" + CRLF3;
         break;
 
     default:
@@ -308,5 +346,4 @@ XText = ( (XHdg == "")  ? ("") : (XHdg + CRLF5 + Inputs.XPAGE1.Value + Inputs.XP
 
 
 /* ****** COMBINE ALL BLOCKS ****** */
-Inputs.COMBINED_TEXT.Value = YText + CRLF5 + OText + CRLF5 + XText;
-Inputs.JOB_TEXT.Value = Job_Text;
+Inputs.COMBINED_TEXT.Value = YText + CRLF5 + OText + CRLF5 + XText + CRLF5 + Job_Text;

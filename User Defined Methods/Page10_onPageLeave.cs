@@ -59,6 +59,7 @@ if (Inputs.SEVENTH_RATIO.Value != "") {
 // Seventh Gear Type.
 if (Inputs.SEVENTH_TYPE.Value != "") {
     IncludedTxt += Inputs.SEVENTH_TYPE.Value + " spec 7th gear" + CRLF1;
+    Inputs.SEVENTH_DOG_TYPE.Value = Inputs.SEVENTH_TYPE.Value;
 } else {
     TBCTxt += "Ratio surface finish*" + CRLF1;
 }

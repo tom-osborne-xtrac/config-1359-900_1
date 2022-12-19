@@ -1,6 +1,5 @@
 switch ( Inputs.INSTALLATION.Value ) {
     case "Audi":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "E 13:37 / 15:33";
         Inputs.THIRD_RATIO.Value = "16:27";
         Inputs.FOURTH_RATIO.Value = "19:27";
@@ -22,7 +21,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
     
     case "BMW":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "E 13:37 / 15:33";
         Inputs.THIRD_RATIO.Value = "18:31";
         Inputs.FOURTH_RATIO.Value = "19:27";
@@ -43,7 +41,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
 
     case "BMW - Test":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "F 12:37 / 14:33";
         Inputs.THIRD_RATIO.Value = "16:30";
         Inputs.FOURTH_RATIO.Value = "17:26";
@@ -64,7 +61,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
 
     case "Dallara": case "GM":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "A 13:35 / 16:33";
         Inputs.THIRD_RATIO.Value = "16:27";
         Inputs.FOURTH_RATIO.Value = "19:27";
@@ -86,7 +82,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
 
     case "HPD - Short":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "J 14:36 / 16:33";
         Inputs.THIRD_RATIO.Value = "17:30";
         Inputs.FOURTH_RATIO.Value = "17:26";
@@ -107,7 +102,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
 
     case "HPD - Daytona":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "K 14:32 / 16:30";
         Inputs.THIRD_RATIO.Value = "16:26";
         Inputs.FOURTH_RATIO.Value = "19:27";
@@ -128,7 +122,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
 
     case "Porsche":
-        Inputs.DRAWING_VARIANT.Value = "1359-900-000A";
         Inputs.FIRST_SECOND_RATIO.Value = "J 14:36 / 16:33";
         Inputs.THIRD_RATIO.Value = "16:27";
         Inputs.FOURTH_RATIO.Value = "19:27";
@@ -151,7 +144,6 @@ switch ( Inputs.INSTALLATION.Value ) {
         break;
 
     default:
-        Inputs.DRAWING_VARIANT.Value = "";
         Inputs.FIRST_SECOND_RATIO.Value = "";
         Inputs.THIRD_RATIO.Value = "";
         Inputs.FOURTH_RATIO.Value = "";
